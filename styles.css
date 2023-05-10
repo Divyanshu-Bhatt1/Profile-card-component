@@ -1,0 +1,152 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+  
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.outer{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+
+    background-image:url("images/bg-pattern-top.svg") , url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 48vw bottom 45vh , left 48vw top 45vh;
+}
+
+
+/* for mobile */
+@media (min-width:375px)  and (max-width:500px) {
+    .inner{
+       height:380px;
+       width:330px;
+    }
+
+    .card-bg{
+
+        height:120px;
+        width:330px;
+        
+    }
+
+    .profile{
+
+            height:95px;
+            width:95px;
+
+    }
+  
+    .p{
+        margin:5px;
+    }
+
+    .f1{
+        margin:22px auto;
+    }
+
+
+}
+
+/* for laptop */
+
+@media (min-width:500px) {
+    .inner{
+        height:450px;
+        width:400px;
+    }
+
+    .card-bg{
+
+        height:150px;
+        width:400px;
+        
+    }
+
+
+    p{
+        margin:15px;
+    }
+    
+    .f1{
+        margin:40px auto;
+    }
+
+    
+}
+
+
+
+.inner{
+    
+    background-color: white;
+    border-radius: 22px;
+    position:relative;
+    box-shadow: 5px 8px 12px hsl(229, 23%, 23%) ;
+}
+
+
+
+
+.card-bg{
+    
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    background-image: url("images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    border: 5px solid white;
+    border-radius: 100px;
+}
+
+
+.card-content{
+    margin:70px 0px 40px 0px;
+    text-align: center;
+}
+
+p{
+   
+    font-weight: 400;
+    color:hsl(0, 0%, 59%);
+}
+
+span{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.footer{
+    display: flex;
+}
+
+h5{
+    margin-top:5px;
+    font-weight: 400;
+    color:hsl(0, 0%, 59%);
+}
+
+h3{
+    color:hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+
